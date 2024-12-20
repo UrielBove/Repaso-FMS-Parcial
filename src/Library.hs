@@ -102,3 +102,15 @@ aabb estrofa = simple1 (1,2) estrofa && simple1 (3,4) estrofa
 
 abab :: Patron
 abab estrofa = simple1 (1,3) estrofa && simple1 (2,4) estrofa
+
+abba :: Patron
+abba estrofa = simple1 (1,4) estrofa && simple1 (2,3) estrofa
+
+hardcore :: Patron
+hardcore estrofa = cadena porMedioDeRimas estrofa && esEsdrujula estrofa
+
+estrofaVersosInf :: Estrofa
+estrofaVersosInf = repeat "corríamos"
+
+--C No Se puede ya que debe recorrer toda la lista infinita para retornar resultado
+
